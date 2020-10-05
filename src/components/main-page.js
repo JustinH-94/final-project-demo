@@ -1,14 +1,23 @@
 import React from "react";
-import Search from "./search";
-
+import { Link } from "react-router-dom";
 function MainPage() {
   return (
     <main>
-      <button>Breakfast</button>
-      <button>Lunch</button>
-      <button>Dinner</button>
-      <button>Dessert</button>
-      <button>Appetizers/Snacks</button>
+      <button>
+        <Link to="/breakfast">Breakfast</Link>
+      </button>
+      <button>
+        <Link to="/lunch">Lunch</Link>
+      </button>
+      <button>
+        <Link to="/dinner">Dinner</Link>
+      </button>
+      <button>
+        <Link to="/dessert">Dessert</Link>
+      </button>
+      <button>
+        <Link to="/app-snack">Appetizer/Snacks</Link>
+      </button>
     </main>
   );
 }

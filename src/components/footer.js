@@ -1,7 +1,7 @@
 import React from "react";
-
+import "./footer.css";
 function Footer() {
-  return <div>Justin Hur, 2020</div>;
+  return <footer className="footer">@ Justin Hur, 2020</footer>;
 }
 
 export default Footer;
