@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../css/search.css";
 
 function Search() {
   const [recipe, setRecipe] = useState("");
@@ -20,7 +21,9 @@ function Search() {
           value={recipe}
           onChange={onRecipeSearch}
         ></input>
-        <button onClick={onSearchButton}>Search</button>
+        <button className="searchClick" onClick={onSearchButton}>
+          Search
+        </button>
       </div>
     </form>
   );

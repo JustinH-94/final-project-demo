@@ -1,7 +1,8 @@
 import React from "react";
-import dessertMenuItems from "./dessert-menu-list";
+import dessertMenuItems from "../data/dessert-menu-list";
 import { Link } from "react-router-dom";
 import FoodPage from "../food-page.js";
+import "../css/menu.css";
 function DessertMenu() {
   return (
     <main>
@@ -15,7 +16,9 @@ function DessertMenu() {
                   to="/foodpage"
                   onClick={() => FoodSelected(dessertElement.Item)}
                 >
-                  <button>{dessertElement.Item}</button>
+                  <button className="food-item__button">
+                    {dessertElement.Item}
+                  </button>
                 </Link>
               </li>
             </ul>

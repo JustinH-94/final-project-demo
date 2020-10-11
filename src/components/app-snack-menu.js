@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import FoodPage from "../food-page";
-import appsnackMenuList from "./app-snack-menulist";
+import appsnackMenuList from "../data/app-snack-menulist";
+import "../css/menu.css";
 function AppSnackMenu() {
   return (
     <main>
@@ -15,7 +16,9 @@ function AppSnackMenu() {
                   to="/foodpage"
                   onClick={() => FoodSelected(appSnackElement.Item)}
                 >
-                  <button>{appSnackElement.Item}</button>
+                  <button className="food-item__button">
+                    {appSnackElement.Item}
+                  </button>
                 </Link>
               </li>
             </ul>
